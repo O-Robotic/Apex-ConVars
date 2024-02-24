@@ -1,0 +1,381 @@
+name,description,default value,flags
+aimassist_sameEntity_guard,,1,FCVAR_RELEASE
+autoConnect,"Automatically attempt to connect to a party server from the main menu, 0 = disabled, 1 = enabled, 2 = enabled w/ custom match",0,FCVAR_RELEASE
+AutoRejectInviteToPlay,,0,FCVAR_RELEASE
+bone_followers_refactor_enabled, ,1,FCVAR_RELEASE
+cc_linger_time,Close caption linger time in seconds.,1,FCVAR_ARCHIVE
+cc_predisplay_time,Close caption delay in seconds before showing caption.,0.25,FCVAR_ARCHIVE
+cc_text_size,"Changes the size of subtitles and closed captions text. 0 = normal, 1 = large, 2 = huge.",0,FCVAR_ARCHIVE_GAMECONSOLE
+cheap_track_disabled,,0,FCVAR_RELEASE
+cheap_track_report_non_fatal_errors,,1,FCVAR_RELEASE
+chroma_enable,,1,FCVAR_ARCHIVE
+cl_comms_filter,"-1 = everyone, 0 = nobody, 1 = friends, 2 = party members. Anyone not matching criteria will be muted by default.",-1,FCVAR_ARCHIVE_GAMECONSOLE
+cl_deathhints_enabled,,1,FCVAR_ARCHIVE_GAMECONSOLE
+cl_ezlaunch_button,,0,FCVAR_HIDDEN | FCVAR_RELEASE
+cl_fovScale,,1.27216005,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_gib_allow,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_ipgeo_country,IP Geo based country code of the client, ,FCVAR_USERINFO
+cl_is_softened_locale,,0,FCVAR_RELEASE
+cl_isUnderAge,,0,FCVAR_USERINFO
+cl_lagcompensation,Perform server side lag compensation of weapon firing events.,1,FCVAR_USERINFO
+cl_liveapi_allow_requests,[LiveAPI] Allow processing and running any incoming requests.,1,FCVAR_RELEASE
+cl_liveapi_enabled,[LiveAPI] Global State,0,FCVAR_RELEASE
+cl_liveapi_pretty_print_log,[LiveAPI] Makes the JSON output more human-readable,0,FCVAR_RELEASE
+cl_liveapi_requests_psk,"[LiveAPI] A preshared key that will be used to validate requests. When set, if a request is received that does not match, it is rejected", ,FCVAR_RELEASE
+cl_liveapi_requests_psk_tries,[LiveAPI] Attempts allowed when making a request with the wrong key before the connection is dropped.,10,FCVAR_RELEASE
+cl_liveapi_session_name,, ,FCVAR_RELEASE
+cl_liveapi_use_protobuf,"[LiveAPI] Use protobuf as the serialization format. Otherwise, use JSON.",1,FCVAR_RELEASE
+cl_liveapi_use_websocket,[LiveAPI] Use bidirectional websocket layer,1,FCVAR_RELEASE
+cl_liveapi_write_event_file,[LiveAPI] Write a per-session file with the LiveAPI events.,1,FCVAR_RELEASE
+cl_liveapi_ws_event_delay,[LiveAPI] Delay to be used when broadcasting an event, ,FCVAR_RELEASE
+cl_liveapi_ws_keepalive,[LiveAPI] Interval of time to send Pong to any connected server,30,FCVAR_RELEASE
+cl_liveapi_ws_lax_ssl,[LiveAPI] Skip SSL certificate validation for all connections. Allows the use of self-signed certificates,1,FCVAR_RELEASE
+cl_liveapi_ws_retry_count,[LiveAPI] Amount of times to retry connecting before marking the connection as unavailable,5,FCVAR_RELEASE
+cl_liveapi_ws_retry_time,[LiveAPI] Time between retries,30,FCVAR_RELEASE
+cl_liveapi_ws_servers,[LiveAPI] Comma separated list of addresses to connect to. Must be in the form 'ws://domain.com:portNum', ,FCVAR_RELEASE
+cl_liveapi_ws_timeout,[LiveAPI] Websocket connection timeout in seconds,300,FCVAR_RELEASE
+cl_matchmaking_timeout,Total time allowed for the client to resend the 'connect' attempt when matchmaking,1,FCVAR_RELEASE
+cl_nameObserverOverride,,0,FCVAR_RELEASE
+cl_observer_preset_playerHash,Used to override the target player when playing as observer in Private/Custom Match, ,FCVAR_CLIENTDLL | FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_observer_preset_playerSlot,"Used to override the player slot for the team, only used if 'cl_observer_preset_team' is >= 0",0,FCVAR_CLIENTDLL | FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_observer_preset_team,Used to override an observers target team (-1 uses previous behavior),-1,FCVAR_CLIENTDLL | FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_odsl_enabled,,0,FCVAR_RELEASE
+cl_particle_fallback_base,Base for falling back to cheaper effects under load.,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_particle_fallback_multiplier,Multiplier for falling back to cheaper effects under load.,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_predict,Perform client side prediction.,1,FCVAR_USERINFO
+cl_predictweapons,Perform client side prediction of weapon effects.,1,FCVAR_USERINFO
+cl_ragdoll_maxcount,,8,FCVAR_CLIENTCMD_CAN_EXECUTE
+cl_ranked_reconnect_timeout,Total time allowed for the client to resend the 'connect' attempt when matchmaking,15,FCVAR_RELEASE
+cl_resend,Delay in seconds before the client will resend the 'connect' attempt,0.5,FCVAR_RELEASE
+cl_resend_timeout,Total time allowed for the client to resend the 'connect' attempt when matchmaking,10,FCVAR_RELEASE
+cl_safearea,,0,FCVAR_ARCHIVE_GAMECONSOLE
+cl_showpos,Draw current position at top of screen,0,FCVAR_RELEASE
+cl_showtime,Draw current demo time if recording a demo,0,FCVAR_RELEASE
+cl_snapshot_draw,,0,FCVAR_RELEASE
+clientport,Host game client port,0,FCVAR_RELEASE
+clientQoSport,,-1,FCVAR_RELEASE
+closecaption,"Enable close captioning. 1 = dialogue only, 2 = dialogue and sound effects.",-1,FCVAR_ARCHIVE_GAMECONSOLE
+colorblind_mode,,0,FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+communicationBlock_time_to_unblock,Int timestamp indicating expiration of the comm block,0,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE
+communities_hostname,, ,FCVAR_RELEASE
+community,Our current community, ,FCVAR_USERINFO
+CrossPlay_user_optin,Our Crossplay opt-in preference,1,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE
+customMatch_hasMultiplePlayers,,0,FCVAR_USERINFO
+customMatchPub_hostname,, ,FCVAR_RELEASE
+damage_indicator_style_pilot,,2,FCVAR_ARCHIVE_GAMECONSOLE
+developer,Set developer message level,0,FCVAR_RELEASE
+discord_updatePresence,Enable discord rich presence.,0,FCVAR_RELEASE
+dvs_enable,Enable dynamic viewport scaling.,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+ea_qvt_ident,,0,FCVAR_RELEASE
+eadp_persistence,,R5,FCVAR_RELEASE
+eadpAuth_hostname,, ,FCVAR_RELEASE
+eadpCodeRedemption_hostname,, ,FCVAR_RELEASE
+eadpFriends_hostname,, ,FCVAR_RELEASE
+eadpGroups_hostname,, ,FCVAR_RELEASE
+eadpRtm_hostname,, ,FCVAR_RELEASE
+eadpSearch_hostname,, ,FCVAR_RELEASE
+eadpUM_hostname,, ,FCVAR_RELEASE
+enable_non_fatal_error_reports,"If disabled, will turn off non-fatal error reports being sent to devnet or backtrace",1,FCVAR_RELEASE
+eula_version_accepted,,0,FCVAR_ARCHIVE_GAMECONSOLE
+fatal_error_signal_abort,,1,FCVAR_RELEASE
+first_time_player_state,The current stage a new user is at,0,FCVAR_ARCHIVE_GAMECONSOLE
+firsttime_mp_message,first time joining multiplayer,0,FCVAR_ARCHIVE_GAMECONSOLE
+fov_disableAbilityScaling,Disable fov scaling for abilities,0,FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+fps_max,Frame rate limiter. -1 indicates use the desktop refresh. 0 is unlocked.,-1,FCVAR_RELEASE
+gameCursor_Velocity,Game cursor velocity under joystick control,1300,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_ads_advanced_sensitivity_scalar_0,Gamepad ads sensitivity for 1x scopes / ironsights.,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_assist_ads_high_power_scopes,Gamepad uses aim assist in ADS with high powered scopes,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_assist_ads_low_power_scopes,Gamepad uses aim assist in ADS with low powered scopes,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_assist_hip_high_power_scopes,Gamepad uses aim assist in Hip with high powered scopes,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_assist_hip_low_power_scopes,Gamepad uses aim assist in Hip with low powered scopes,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_assist_melee,Gamepad uses aim assist with melee weapons,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_speed,,2,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_aim_speed_ads_0,,-1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_button_layout,Gamepad button layout (used by menus),0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_buttons_are_southpaw,Gamepad button layouts should use southpaw variants (used by menus),0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_ads_pitch,,75,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_ads_turn_delay,,0.25,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_ads_turn_pitch,,30,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_ads_turn_time,,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_ads_turn_yaw,,30,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_ads_yaw,,110,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_assist_on,,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_assist_style,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_curve,,10,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_deadzone_in,,0.15,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_deadzone_out,,0.02,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_enabled,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_hip_pitch,,120,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_hip_turn_delay,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_hip_turn_pitch,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_hip_turn_time,,0.33,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_hip_turn_yaw,,220,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_hip_yaw,,160,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_pilot,,"0,1,2,3,4,5,6,7,8,9,10,11,12,13",FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_custom_titan,,"0,1,2,3,4,5,6,7,8,9,10,11,12,13",FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_deadzone_index_look,,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_deadzone_index_move,,1,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_look_curve,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_stick_layout,Gamepad stick layout (used by menus),0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_toggle_ads,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_toggle_survivalSlot_to_weaponInspect,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_togglecrouch_hold,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_trigger_threshold,,30,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_use_per_scope_ads_settings,,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_use_per_scope_sensitivity_scalars,Gamepad uses the per scope scalars,0,FCVAR_ARCHIVE_GAMECONSOLE
+gamepad_use_type,"Gamepad use scheme (used by menus), 0: hold use, tap reload, 1: tap use, hold reload, 2: tap use/reload",2,FCVAR_ARCHIVE_GAMECONSOLE
+gamma_adjusted,Whether player has done gamma adjustment,0,FCVAR_ARCHIVE_GAMECONSOLE
+gfx_nvnUseLowLatency,enables Nvidia Low Latency SDK,1,FCVAR_ARCHIVE | FCVAR_RELEASE
+gfx_nvnUseLowLatencyBoost,enables Low Latency Boost,0,FCVAR_ARCHIVE | FCVAR_RELEASE
+gladcard_cache_debugging_enabled,,0,FCVAR_RELEASE
+gladcard_cache_enabled,,0,FCVAR_RELEASE
+hasAnyAssetsWithDiscardedStreamableData,,0,FCVAR_USERINFO
+hasMic,,0,FCVAR_USERINFO
+hasPartialInstall,,0,FCVAR_USERINFO
+host_flush_threshold,Memory threshold below which the host should flush caches between server instances,12,FCVAR_RELEASE
+host_map,Current map name., ,FCVAR_RELEASE
+hostname,Hostname for server., ,FCVAR_RELEASE
+http_StryderKey,,,FCVAR_RELEASE
+hud_setting_accessibleChat,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_adsDof,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_anonymousMode,,0,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_compactOverHeadNames,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_damageIndicatorStyle,,2,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_damageTextStyle,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_enableModWheel,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_healthUseOnHold,use health by holding button,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_healthWheelToggle,toggle health wheel on press,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_healthWheelUseOnRelease,use health after selecting it,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_lootPromptStyle,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_minimapRotate,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_ordnanceUseOnHold,use ordnance by holding button,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_ordnanceWheelToggle,toggle ordnance wheel on press,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_ordnanceWheelUseOnRelease,use ordnance after selecting it,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_pingAlpha,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_pingDoubleTapEnemy,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_pingWheelToggle,toggle ping wheel on press,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showButtonHints,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showCallsigns,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showHopUpPopUp,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showLevelUp,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showMedals,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showMeter,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showObituary,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showOffscreenPortrait,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showTeamNamesOnMap,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showTips,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_showWeaponFlyouts,,1,FCVAR_ARCHIVE_GAMECONSOLE
+hud_setting_streamerMode,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hudchat_play_text_to_speech,,0,FCVAR_ARCHIVE_GAMECONSOLE
+hudchat_visibility,,1,FCVAR_ARCHIVE_GAMECONSOLE
+inPartyChat,,0,FCVAR_USERINFO
+intro_viewed,Whether the introduction video has been viewed by this player,0,FCVAR_ARCHIVE_GAMECONSOLE
+Invite_Flyout_Off,Used to disable Invite Fly Outs.,0,FCVAR_ARCHIVE_GAMECONSOLE
+ip,,localhost,FCVAR_RELEASE
+joy_inverty,Whether to invert the Y axis of the joystick for looking.,0,FCVAR_ARCHIVE_GAMECONSOLE
+joy_legacy,Turn on/off 'Legacy' mapping for control sticks.,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+joy_movement_stick,Which stick controls movement (0 is left stick),0,FCVAR_CLIENTCMD_CAN_EXECUTE
+joy_rumble,"Controller rumble. 0: off, 1: on (default).",2,FCVAR_ARCHIVE_GAMECONSOLE
+kepler_hostname,, ,FCVAR_RELEASE
+laserSightColor,Custom Laser Sight Color,0,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE
+laserSightColorCustomized,Custom Laser Sight Color Enabled,0,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE
+localClientPlayerCachedLevel,,1,FCVAR_HIDDEN | FCVAR_ARCHIVE_GAMECONSOLE
+locationInfo,What OS(on PC and Durango) or PSN account(on PS4) reports as the user's location, ,FCVAR_HIDDEN | FCVAR_USERINFO
+locationInfo_nucleus,What origin(on PC) or nucleus(on console) reports as the user's location,ZZ,FCVAR_HIDDEN | FCVAR_USERINFO
+lookspring,,0,FCVAR_ARCHIVE
+lookstrafe,,0,FCVAR_ARCHIVE
+m_acceleration,Mouse acceleration.,0,FCVAR_ARCHIVE
+m_clamp_to_window,,0,FCVAR_ARCHIVE
+m_invert_pitch,Whether to invert the pitch axis of the mouse.,0,FCVAR_ARCHIVE_GAMECONSOLE
+mat_bloom_scalefactor_scalar,,0.1,FCVAR_RELEASE
+mat_forceaniso,,2,FCVAR_CLIENTCMD_CAN_EXECUTE
+mat_mip_linear,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+mat_picmip,,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+mat_set_dress_level,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+mat_syncGPU,"If true, syncs the render thread to the GPU at the end of each frame, instead of letting the render thread get one frame ahead.",0,FCVAR_RELEASE
+match_allowMapRotationPreloading,Allow the server to change currently loaded map based on map rotation times,1,FCVAR_RELEASE
+match_myBestDatacenter,Which datacenter we have the lowest ping to, ,FCVAR_USERINFO | FCVAR_RELEASE
+match_myDatacenter,Which datacenter we prefer (same as match_myBestDatacenter unless user changes it), ,FCVAR_USERINFO | FCVAR_RELEASE
+match_myRankedDatacenter,Which datacenter we prefer for Ranked play (same as match_myBestDatacenter unless user changes it), ,FCVAR_USERINFO | FCVAR_RELEASE
+match_myTeam,,0,FCVAR_USERINFO
+match_partyChangeNum,The int that represents the change num of our party struct (did it change?), ,FCVAR_USERINFO
+match_partySize,The size of our party, ,FCVAR_USERINFO
+match_partySub,The name of our party subscription, ,FCVAR_USERINFO
+match_playlist,The playlist we are looking for, ,FCVAR_USERINFO | FCVAR_RELEASE
+match_precachemapOnMismatch,Whether to re-precache the map on mismatch between engine and matchmaking,1,FCVAR_RELEASE
+match_roleToken,The role token used when matchmaking (e.g. for private match)., ,FCVAR_USERINFO | FCVAR_RELEASE
+match_searching,Whether or not we want the system to be actively searching right now,0,FCVAR_USERINFO | FCVAR_RELEASE
+match_searchInterval,How often to repeat searches,2,FCVAR_RELEASE
+match_teamNoFill,"If set, matchmaking won't fill the player's team with non-party members",0,FCVAR_USERINFO | FCVAR_RELEASE
+match_trackMMR,,1,FCVAR_RELEASE
+matchmaking_hostname,, ,FCVAR_RELEASE
+mem_saving_release_mb,Amount of free mem that stops memory saving (in MB). Should be higher than mem_saving_trigger_mb + mem_saving_request_mb to prevent thrashing,40,FCVAR_RELEASE
+mem_saving_request_mb,Amount of memory to request from streaming systems when saving is active (in MB),20,FCVAR_RELEASE
+mem_saving_trigger_mb,Amount of free mem that triggers memory saving (in MB),10,FCVAR_RELEASE
+mem_saving_use_factor,Memory saving will not trigger unless streamers are using a total of (mem_saving_use_factor * mem_saving_request_mb),10,FCVAR_RELEASE
+mem_saving_vram_release_mb,,512,FCVAR_CLIENTCMD_CAN_EXECUTE
+mem_saving_vram_request_mb, ,20,FCVAR_CLIENTCMD_CAN_EXECUTE
+mem_saving_vram_trigger_mb, ,256,FCVAR_CLIENTCMD_CAN_EXECUTE
+menu_faq_community_version, ,-1,FCVAR_ARCHIVE_GAMECONSOLE
+menu_faq_patchnotes_version, ,-1,FCVAR_ARCHIVE_GAMECONSOLE
+menu_faq_viewed, ,0,FCVAR_ARCHIVE_GAMECONSOLE
+menu_was_multiplayer_played_last, ,0,FCVAR_ARCHIVE_GAMECONSOLE
+miles_channels,"Number of audio channels, commonly 2(stereo), 6(5.1), 8(7.1). (0 is default)",0,FCVAR_ARCHIVE
+miles_driver,"Options are 'wasapi' (default), 'xaudio2', 'directsound', 'wasapi_ss', 'null'", ,FCVAR_RELEASE
+miles_init_null_fallback,Start with null driver if driver creation fails (allows game to boot with no sound devices),1,FCVAR_RELEASE
+miles_language,Language to use for audio (requires a miles restart to change.), ,FCVAR_ARCHIVE_GAMECONSOLE
+miles_output_device,empty = default, ,FCVAR_ARCHIVE
+miles_recreate_on_default_changed,Recreate driver when swapping devices with miles_output_device set to default,1,FCVAR_RELEASE
+mouse_sensitivity,Mouse sensitivity.,5,FCVAR_ARCHIVE
+mouse_use_per_scope_sensitivity_scalars,Uses the per scope scalars,0,FCVAR_ARCHIVE
+mouse_zoomed_sensitivity_scalar_0,Mouse sensitivity.,1,FCVAR_ARCHIVE
+mp_player_level,To read mp player level in SP,0,FCVAR_ARCHIVE_GAMECONSOLE
+name,Current user name,unnamed,FCVAR_ARCHIVE | FCVAR_PRINTABLEONLY
+net_bindToSpecificAddress,Only bind to a certain interface,0,FCVAR_RELEASE
+net_maxRecvCall,,1000,FCVAR_RELEASE
+net_maxRecvPacket,,10000,FCVAR_RELEASE
+net_minimumPacketLossDC,The lowest packet loss we have to any datacenter,100,FCVAR_USERINFO
+net_netGraph2,,0,FCVAR_RELEASE | FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+net_queuedPackets_emptyQueueSleep,Can't be changed at runtime,10,FCVAR_RELEASE
+net_recvBufferSizeOverride,Override the default receive socket buffer size,0,FCVAR_RELEASE
+net_showsplits,Show info about packet splits,0,FCVAR_RELEASE
+net_showudp,Dump UDP packets summary to console,0,FCVAR_RELEASE
+net_showudp_oob,Dump OOB UDP packets summary to console,0,FCVAR_RELEASE
+net_showudp_remoteonly,Dump non-loopback udp only,0,FCVAR_RELEASE
+net_splitrate,Number of fragments for a splitpacket that can be sent per frame,3,FCVAR_RELEASE
+net_splitrateDefaultMP,Default MP number of fragments for a splitpacket that can be sent per frame,3,FCVAR_RELEASE
+net_splitrateDefaultSP,Default SP number of fragments for a splitpacket that can be sent per frame,10000,FCVAR_RELEASE
+net_wifi,"0 = ethernet, 1 = wifi, -1 = unknown",-1,FCVAR_USERINFO | FCVAR_RELEASE
+noise_filter_scale,,0.006,FCVAR_ARCHIVE_GAMECONSOLE
+not_focus_sleep,MS to sleep while window doesn't have focus,50,FCVAR_RELEASE
+nucleus_id,,0,FCVAR_USERINFO
+nucleus_persona_id,,unknown,FCVAR_USERINFO
+nx_viewportscale_max_handheld,Sets the max viewportscale value on Switch handheld,1,FCVAR_RELEASE
+nx_viewportscale_max_handheld_lobby,Sets the max viewportscale value on Switch handheld,1,FCVAR_RELEASE
+nx_viewportscale_min_handheld,Sets the min viewportscale value on Switch handheld,0.7,FCVAR_RELEASE
+nx_viewportscale_min_handheld_lobby,Sets the min viewportscale value on Switch handheld,1,FCVAR_RELEASE
+old_gather_props,,0,FCVAR_RELEASE
+particle_cpu_level,,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+party_color_enabled,,0,FCVAR_ARCHIVE_GAMECONSOLE
+party_hostname,, ,FCVAR_RELEASE
+party_nofill_selected,,0,FCVAR_USERINFO | FCVAR_RELEASE
+party_userinfo_allowstale,"If true, stale userinfo for party members will continue to be used until the new info is fetched",1,FCVAR_CLIENTCMD_CAN_EXECUTE
+persistence_clForceNew,,0,FCVAR_USERINFO
+persistence_hostname,, ,FCVAR_RELEASE
+persistenceDef_hostname,, ,FCVAR_RELEASE
+pin_opt_in,Enables sending PIN telemetry data to EA,1,FCVAR_ARCHIVE_GAMECONSOLE
+pin_sid,Session ID,unknown,FCVAR_USERINFO
+pin_telemetry_report_date,,0,FCVAR_ARCHIVE_GAMECONSOLE
+pin_telemetry_report_interval,,1814400,FCVAR_RELEASE
+player_setting_autosprint,Automatically sprint when walking forward.,0,FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+player_setting_damage_closes_deathbox_menu,Controls whether death box automatically closes when taking damage (used for menus).,1,FCVAR_ARCHIVE_GAMECONSOLE
+player_setting_enable_heartbeat_sounds,Enables heartbeat sensor heartbeat sounds.,1,FCVAR_ARCHIVE_GAMECONSOLE
+player_setting_stickysprintforward,Double-tapping sprint will keep the player sprinting forward.,0,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+player_use_prompt_enabled,,1,FCVAR_ARCHIVE_GAMECONSOLE
+ps5_activities_env,, ,FCVAR_HIDDEN | FCVAR_USERINFO
+ps5_force_enable_adth,,1,FCVAR_ARCHIVE_GAMECONSOLE
+ps5_trig_enable,,1,FCVAR_ARCHIVE_GAMECONSOLE
+publication_hostname,, ,FCVAR_RELEASE
+r_createmodeldecals,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+r_decals,,256,FCVAR_CLIENTCMD_CAN_EXECUTE
+r_dynamic,,1,FCVAR_RELEASE
+r_lod_switch_scale,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+r_skin_skip_invalid_materials,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+rankedplay_display_enabled,,0,FCVAR_ARCHIVE_GAMECONSOLE
+rankedplay_voice_enabled,,0,FCVAR_ARCHIVE_GAMECONSOLE
+reconnect_cache_delete,Allow / Disallow reconnect to remove cached reconnect params.,1,FCVAR_RELEASE
+reticle_color,, ,FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+rprof_no_devnet,,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+rt_sleep,,1,FCVAR_RELEASE
+rt_worker,,1,FCVAR_RELEASE
+rtk_enableLaserScreen,"Enable RTK version of LaserScreen, otherwise VGUI version is used",0,FCVAR_RELEASE
+rtk_enableStatsScreen,"Enable RTK version of StatsScreen, otherwise VGUI version is used",1,FCVAR_RELEASE
+rtk_strpools_display,,0,FCVAR_RELEASE
+rtk_strpools_print,,0,FCVAR_RELEASE
+serverFilter,Only connects to servers with the same value, ,FCVAR_RELEASE
+serverReports_hostname,, ,FCVAR_RELEASE
+shader_lods_enable,,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+shader_lods_static_prop_scaled_dist,,10,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_depth_dimen_min,Minimum resolution of a spot shadow map in width and height,256,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_depth_upres_factor_max,Maximum requested upres factor of spot shadows (dimen_min << this) == largest spot shadow dimen,2,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_enable, ,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_lobby_depth_dimen_min, ,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_lobby_player_intersect_scalar,Priority scalar for shadows in lobby whose cone intersects the player. (Lower is higher priority),1.0f,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_max_dynamic_lobby,Maximum number of shadows that should update every frame in Lobby.,10,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_maxdynamic,Maximum number of shadows that should update every frame.,4,FCVAR_CLIENTCMD_CAN_EXECUTE
+shadow_maxdynamic, ,4,FCVAR_CLIENTCMD_CAN_EXECUTE
+showfps_enabled, ,0,FCVAR_RELEASE
+showfps_max_ms,Maximum time in ms that will fit on the showfps graph.,32,FCVAR_RELEASE
+showinput_enabled, ,0,FCVAR_RELEASE
+showio_enabled, ,0,FCVAR_RELEASE
+showmem_cheaptrack_features, ,0,FCVAR_RELEASE
+showmem_cheaptrack_owners, ,0,FCVAR_RELEASE
+showmem_enabled, ,0,FCVAR_RELEASE
+showmem_mode_bottom,"Mode 0 is total free memory(excluding garlic), 1 is small block heap, 2 is total small block heap, 3 is Client Script, 4 is UI Script, 5 is Server Script (on PC)",3,FCVAR_RELEASE
+showmem_mode_top," Mode 0 is total free memory(excluding garlic), 1 is small block heap, 2 is total small block heap, 3 is Client Script, 4 is UI Script, 5 is Server Script (on PC)",0,FCVAR_RELEASE
+shownet_enabled, ,0,FCVAR_RELEASE
+skill_hostname,, ,FCVAR_RELEASE
+sound_classic_music,classic music volume (float 0 – 2),0,FCVAR_ARCHIVE_GAMECONSOLE
+sound_musicReduced, ,0,FCVAR_ARCHIVE_GAMECONSOLE
+sound_num_speakers,"2 - headphones or stereo, 6 - 5.1 surround, 8 - 7.1 surround.  All other values invalid",2,FCVAR_ARCHIVE
+sound_volume,master game volume (float 0 – 2),1,FCVAR_RELEASE
+sound_volume_dialogue,dialogue volume (mp) (float 0 – 2),1,FCVAR_ARCHIVE_GAMECONSOLE
+sound_volume_music_game,music volume in game (mp) (float 0 – 2),1,FCVAR_ARCHIVE_GAMECONSOLE
+sound_volume_music_lobby,music volume in lobby (float 0 – 2),1,FCVAR_ARCHIVE_GAMECONSOLE
+sound_volume_sfx,sound effect volume (mp) (float 0 – 2),1,FCVAR_ARCHIVE_GAMECONSOLE
+sound_volume_voice,voice chat volume (float 0 – 2),1,FCVAR_ARCHIVE
+sound_without_focus,Play sounds even when the app doesn't have focus.,0,FCVAR_ARCHIVE_GAMECONSOLE
+speechtotext_disable_expire_logic,,0,FCVAR_RELEASE
+speechtotext_disable_time,,0,FCVAR_ARCHIVE_GAMECONSOLE
+speechtotext_enabled,,0,FCVAR_ARCHIVE_GAMECONSOLE
+speechtotext_expire_duration,,604800,FCVAR_RELEASE
+speechtotexttoken_hostname,, ,FCVAR_RELEASE
+speex_quiet_threshold,,1300,FCVAR_ARCHIVE
+spinner_debug_info,,0,FCVAR_RELEASE
+sprint_view_shake_style,,0,FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+ssao_downsample,"0 = 1:1, 1 = 2:1, 2 = 4:1",0,FCVAR_CLIENTCMD_CAN_EXECUTE
+ssao_enabled,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+staticfile_hostname,, ,FCVAR_RELEASE
+stats_hostname,, ,FCVAR_RELEASE
+steam_environment,,production,FCVAR_RELEASE
+stream_cache_align_memory_estimates,,1,FCVAR_CLIENTCMD_CAN_EXECUTE
+stream_memory,Stream memory to target (in kb).,300000,FCVAR_CLIENTCMD_CAN_EXECUTE
+stream_memory_min,Minimum streaming memory (in kb).,0,FCVAR_CLIENTCMD_CAN_EXECUTE
+stream_texture_bandwidth,Maximum bandwidth (in MB/s) to use for streaming. This should be lower than the GPU-CPU bus bandwidth (e.g. PCIe bus bandwidth).,100,FCVAR_CLIENTCMD_CAN_EXECUTE
+stryder_security,, ,FCVAR_USERINFO
+subscription_hostname,, ,FCVAR_RELEASE
+sv_earlyPersistenceRead,Should the server try to read persistence earlier in the connection process\n,0,FCVAR_RELEASE
+sv_netstrcmd_retail_enabled,,1,FCVAR_RELEASE
+sv_netstrcmd_retail_track,,1,FCVAR_RELEASE
+sv_voiceenable,,1,FCVAR_ARCHIVE | FCVAR_RELEASE
+TalkIsStream,,0,FCVAR_ARCHIVE
+toggle_on_jump_to_deactivate,Toggle or release jump to deactivate the offhand weapon,1,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE
+toggle_on_jump_to_deactivate_changed,If Toggle or release jump to deactivate the offhand weapon changed by the player,0,FCVAR_ARCHIVE_GAMECONSOLE
+twitch_drops,Entitlements user has received through the Twitch Drops program, ,FCVAR_HIDDEN | FCVAR_USERINFO
+twitch_drops_initialized,Whether the user has received any twitch drop info from stryder,0,FCVAR_HIDDEN | FCVAR_USERINFO
+twitch_prime_fulfillmentToken,Token for reporting Prime reward fulfillment, ,FCVAR_HIDDEN | FCVAR_USERINFO
+twitch_prime_rewards,Entitlements user has received through the Twitch Prime rewards program, ,FCVAR_HIDDEN | FCVAR_USERINFO
+use_eadp_shorthash,Hash the Nucleus ID to its short version (32 chars) instead of the long version (128 chars).,1,FCVAR_RELEASE
+users_hostname,, ,FCVAR_RELEASE
+viewportscale,Scale down the main viewport (to reduce GPU impact on CPU profiling),1,FCVAR_RELEASE
+voice_enabled,Toggle voice transmit and receive.,1,FCVAR_ARCHIVE_GAMECONSOLE
+voice_forcemicrecord,,1,FCVAR_ARCHIVE
+voice_input_device,Voice capture device guid for directsound. empty = default capture device (will automatically reset voice on default changed), ,FCVAR_ARCHIVE
+voice_inputfromfile,Get voice input from 'voice_input.wav' rather than from the microphone.,0,FCVAR_RELEASE
+voice_loopback, ,0,FCVAR_USERINFO
+voice_mixer_boost, ,0,FCVAR_ARCHIVE
+voice_mixer_mute, ,0,FCVAR_ARCHIVE
+voice_mixer_volume, ,1,FCVAR_ARCHIVE
+voice_modenable,Enable/disable voice in this mod.,1,FCVAR_ARCHIVE | FCVAR_CLIENTCMD_CAN_EXECUTE
+voice_recordtofile,Record mic data and decompressed voice data into 'voice_micdata.wav' and 'voice_decompressed.wav',0,FCVAR_RELEASE
+voice_scale, ,1,FCVAR_ARCHIVE
+voice_vox,Voice chat uses a vox-style always on,1,FCVAR_ARCHIVE
+vtx_hostname,, ,FCVAR_RELEASE
+watchdog_dialog,Show a dialog prompt (for PC). Default is 1 (enabled),1,FCVAR_RELEASE
+watchdog_sleep_time_milliseconds,Time watchdog thread to sleep in milliseconds.  Defaults to 1000 (1 second).,1000,FCVAR_RELEASE
+watchdog_time_milliseconds,"Time for watchdog to wait without seeing a new frame presented before triggering a crash report, in milliseconds. Default is 0 (0 disables the feature)",0,FCVAR_RELEASE
+weapon_setting_autocycle_on_empty, ,1,FCVAR_USERINFO | FCVAR_ARCHIVE_GAMECONSOLE | FCVAR_CLIENTCMD_CAN_EXECUTE
+weapon_switchOffHand_checkODLSkin, ,0,FCVAR_RELEASE
+XLOG_telemetry_shortcircuit,Allow customers to turn off xlog.,0,FCVAR_RELEASE
+xlog_tls_allow_vip_upload, ,1,FCVAR_ARCHIVE_GAMECONSOLE
+zipline_detection_player_in_front, ,1,FCVAR_RELEASE
